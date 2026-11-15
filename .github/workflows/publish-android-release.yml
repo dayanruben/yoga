@@ -30,6 +30,7 @@ jobs:
           path: '~/.m2/repository/'
 
       - name: Publish to the Maven Central
+        if: github.repository_owner != 'dayanruben'
         run: ./gradlew publishToSonatype closeAndReleaseSonatypeStagingRepository
         env:
           ORG_GRADLE_PROJECT_SONATYPE_USERNAME: ${{ secrets.ORG_GRADLE_PROJECT_SONATYPE_USERNAME }}

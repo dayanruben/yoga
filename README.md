@@ -34,3 +34,8 @@ To generate new tests from added fixtures:
 ## Debugging
 
 Yoga provides a VSCode "launch.json" configuration which allows debugging unit tests. Simply add your breakpoints, and run "Debug C++ Unit tests (lldb)" (or "Debug C++ Unit tests (vsdbg)" on Windows).
+
+## Fork validation policy
+
+This fork is used for compatibility validation. Publication and deployment steps
+are guarded against running under `dayanruben`; build and test steps remain available.
